@@ -1,0 +1,7 @@
+{
+    "name": "slokuge.github.io",
+    "version": "0.1.0",
+    "dependencies": {
+        "bulma": "^0.7.5"
+    }
+}
