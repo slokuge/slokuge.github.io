@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Sadsitha's resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  </body>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://slokuge.github.io/">
+                <img src="./src//images/avatar.svg" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://www.linkedin.com/in/sadsitha-lokuge/">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                    <p>LinkedIn</p>
+                </a>
+                <a class="navbar-item" href="https://github.com/slokuge/">
+                    <span class="icon"><i class="fab fa-github-square"></i></span>
+                    <p>Github</p>
+                </a>
+                <a class="navbar-item" href="./src/webpages/resume.html">
+                    <span class="icon"><i class="fas fa-file"></i></span>
+                    <p>Résumé</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="level">
+                    <div class="level-item has-text-centered">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="./src/images/mypic.JPG">
+                        </figure>
+                    </div>
+                </div>
+                <h1 class="title">
+                    Sadsitha Lokuge
+                </h1>
+                <h2 class="subtitle">
+                    Student in Computer Engineering
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container has-text-centered">
+            <h1 class="title">Hey there ... !</h1>
+            <p>I am a Computer Engineering student at INSA Lyon in France.</p>
+            <p>I am a dynamic and motivated person and am always up for learning new technologies and working in new and exciting environements.</p>
+            <p>My passions are web development, playing guitar and cats. Click below to see my résumé</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container has-text-centered">
+            <a class="button" href="./src/webpages/resume.html">Résumé</a>
+        </div>
+    </section>
+</body>
+
 </html>
