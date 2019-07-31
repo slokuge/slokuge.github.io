@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="./resume.css">
     <link rel="stylesheet" href="../index.css">
+    <script defer src="./resume.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,7 @@
             </div>
         </div>
     </nav>
-    <section class="section" style="max-width:1200px; margin:auto;">
+    <section class="section" id="resume" style="max-width:1200px; margin:auto;">
         <div class="columns slide_top">
             <div class="column"></div>
             <div class="column has-text-centered is-narrow">
@@ -222,7 +225,8 @@
                     </ul>
                 </div>
                 <div class="tile is-vertical is-parent" style="width:100%;display: flex;align-items: center;margin-top:2rem;">
-                    <a class="button" href="../src/documents/cv-sadsitha-lokuge.pdf"><i class="fas fa-download" style="margin-right: 5px;"></i> Download my resume</a>
+                    <!-- <a class="button" href="../src/documents/cv-sadsitha-lokuge.pdf"><i class="fas fa-download" style="margin-right: 5px;"></i> Download my resume</a> -->
+                    <p class="button" id="download"><i class="fas fa-download" style="margin-right: 5px;"></i> Download my resume</p>
                 </div>
             </div>
         </div>
