@@ -12,3 +12,7 @@
 .section_title .image {
     margin-left: 15px;
 }
+
+.navbar-item {
+    justify-content: center;
+}
