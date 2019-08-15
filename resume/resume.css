@@ -3,3 +3,12 @@
     letter-spacing: 0.1em;
     font-weight: bold;
 }
+
+.section_title {
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.section_title .image {
+    margin-left: 15px;
+}
