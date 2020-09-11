@@ -3,7 +3,7 @@ const path = require('path');
 
 const files = [
     { html: "resume/index.html", output: "./src/documents/cv-sadsitha-lokuge.pdf" },
-    { html: "resume-fr/index.html", output: "./src/documents/cv-sadsitha-lokuge_fr.pdf" }
+    { html: "resume-fr/index.html", output: "./src/documents/cv-sadsitha-lokuge-fr.pdf" }
 ]
 
 const generate = async () => {
