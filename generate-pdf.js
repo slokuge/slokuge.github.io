@@ -51,13 +51,15 @@ const generate_cv = async (file, browser) => {
     await page.waitForTimeout(500);
     await add_phone_numbers(page);
     await delete_excess('.to-delete', page);
-    await page.pdf({ path: file.output, format: 'A4', scale: 0.6, margin: { top: '1.5cm', bottom: '1.5cm', left: '0.75cm', right: '0.75cm'} });
+    await page.pdf({ path: file.output, format: 'A4', scale: 0.6, margin: { top: '1.5cm', bottom: '1.5cm', left: '0.75cm', right: '0.75cm' } });
 }
 
 const delete_existing_pdf = () => {
     files.forEach(file => {
         try {
-            fs.unlinkSync(file.output);
+            if (fs.existsSync(file.output)) {
+                fs.unlinkSync(file.output);
+            }
         } catch (error) {
             console.log(error);
         }
