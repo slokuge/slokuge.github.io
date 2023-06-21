@@ -7,10 +7,20 @@
   <body>
     <h1>Ye olde CheckoutInvoiceUI</h1>
     <br></br>
+    <p>Language is : </p>
+    <pre id="lang-data"></pre>
+    <br></br>
+    <p>Timezone : </p>
+    <pre id="tz-data"></pre>
+    <br></br>
     <pre id="json-data"></pre>
     <script>
       const orderData = JSON.parse(sessionStorage.getItem("orderPdfRenderData"));
       const jsonOutput = JSON.stringify(orderData, null, 2);
+      const lang = window.navigator.language;
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      document.getElementById("lang-data").textContent = lang;
+      document.getElementById("tz-data").textContent = tz;
       document.getElementById("json-data").textContent = jsonOutput;
     </script>
   </body>
