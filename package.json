@@ -5,7 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "bulma": "^0.7.5",
-    "puppeteer": "^5.3.0"
+    "puppeteer": "^24.37.5"
   },
   "devDependencies": {},
   "scripts": {
